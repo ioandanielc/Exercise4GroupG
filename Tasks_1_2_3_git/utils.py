@@ -117,7 +117,7 @@ def present_phase_portr(title, A):
 ############################################################Functions for task 2#############################################################################
 
 #Plot the bifurcations no matter the chosen speed
-def plot_bifurcation_1(alpha, no):
+def plot_bifurcation(alpha, no):
     if no == 1:
         new_alpha = alpha[alpha >= 0]
         new_alpha = np.insert(new_alpha, 0, 0, axis=0)
@@ -148,6 +148,8 @@ def plot_bifurcation_1(alpha, no):
     ax = plt.gca()
     ax.set_xlim([-2, 12])
     ax.set_ylim([-4, 4])
+
+
 
 ############################################################Functions for task 3#############################################################################
 
